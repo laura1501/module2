@@ -26,11 +26,8 @@ header {
     padding: 20px;
     background-color: #f4f4f4;
     position: relative;
-    flex: 1; 
-    margin: 10px;
-    min-width: 250px; 
-    display: flex;
-    flex-direction: column; 
+    flex: 1 1 calc(33.33% - 20px); 
+    margin: 10px; 
 }
 
 .section-title {
@@ -43,21 +40,14 @@ header {
     border: 1px solid black;
 }
 
-@media (min-width: 992px) {
+@media (max-width: 991px) {
     .section {
-        flex: 1 1 30%; 
+        flex: 1 1 calc(50% - 20px); 
     }
 }
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .section {
-        flex: 1 1 45%; 
-    }
-}
-
 
 @media (max-width: 767px) {
     .section {
-        flex: 1 1 100%; 
+        flex: 1 1 100%;
     }
 }
